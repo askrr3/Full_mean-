@@ -1,0 +1,42 @@
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>mousedown demo</title>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<p>Press mouse and release here.</p>
+
+<script>
+$(document).ready(function(){
+  var mousedown;
+  var mouseup;
+
+$( "p" ).mousedown(function(event) {
+  var mousedown = event.timeStamp;
+ 
+console.log(mousedown);
+});
+
+$("p").mouseup(function(event){
+  var mouseup = event.timeStamp;
+
+console.log(mouseup);
+
+});
+
+console.log(mouseup - mousedown);
+});
+
+// console.log(mouseup);
+// document.getElementById("#").innerHTML = Date();
+// .mouseup(function() {
+//   $( this ).append( "<span style='color:#00f;'>Mouse down.</span>" );
+//   $(document.getElementById("demo").innerHTML = Date());
+// });
+</script>
+
+</body>
+</html>
