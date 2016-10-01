@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+
+    <div class="banner">
+
+    <a href='#/dashboard' class = "textbanner">Dashboard</a> | <a href='#/products' class = "textbanner">Products</a> | <a href='#/orders' class = "textbanner">Orders</a> | <a href='#/customers' class = "textbanner">Customers</a>  |  <a href='#/logout' class = "textbanner">Logout</a>
+
+  </div> <!-- end of banner -->
+    <div class = "add_order">
+      <p>Customer
+      <select>
+        <option>{{names}}</option>
+      </select></p>
+      <p>Order
+      <select>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <select>
+        <option>{{products}}</option>
+      </select> </p>
+    </div>
+    <div class = "table">
+      <table>
+        <tr>
+          <th> Customer Name</th>
+          <th> Product</th>
+          <th> Quantity</th>
+          <th> Date</th>
+        </tr>
+        <tr>
+          <td>{{stuff}}</td>
+          <td>{{stuff}}</td>
+          <td>{{stuff}}</td>
+          <td>{{stuff}}</td>
+
+        </tr>
+      </table>
+    </div>
+
+  </div> <!-- end of container -->
+
+  </body>
+</html>
